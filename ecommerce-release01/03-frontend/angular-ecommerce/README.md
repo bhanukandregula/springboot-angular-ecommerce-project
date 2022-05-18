@@ -44,6 +44,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
    4. Integrate template files into Angular App
    5. Add support for icons and logos
    6. Enchance ouir application with product images
+   
 2. Search for products by Category
    1. Define Routes
    2. Configure Router based on our Routes
@@ -51,6 +52,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
    4. Setup Router Links to pass category ID param
    5. Enchancce ProductListComponment to read category ID param
    6. Modify Springboot App - REST Repositoty needs new method
+   7. READ Categories from Database via REST API, they are hardcoded now
+      1. Modify Springboot app - expose entity ids
+      2. Creata a class: Product Category
+      3. Create new component for menu
+      4. Enchance Menu component to read data from product service
+      5. Udpate product service to call URL on Spring boot app
+      6. In HTML, replace hard coded links with menu component
+   
 3. Search for products by tech box
 4. Master/ detail view of products
 5. Pagination support for products
@@ -65,6 +74,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 5. ng generate service services/product
 6. npm install bootstrap
 7. npm install @fordawesome/fontawesome-free
+8. ng generate class common/product-category
+9. ng generate component components/product-category-menu
 
 
 ### Angular Definitions:
