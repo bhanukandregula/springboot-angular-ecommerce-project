@@ -36,12 +36,26 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 7. Add cross origin support to Spring Boot app
 
 ### Relsease 02: Development Process
-1. Download the HTML templates started files
-2. Install Bootstrap CSS styles locally with npm
-3. Add local custom CSS styles to Angular src/styles.css
-4. Integrate template files into Angular App
-5. Add support for icons and logos
-6. Enchance ouir application with product images
+
+1. Online Shop Template Integration
+   1. Download the HTML templates started files
+   2. Install Bootstrap CSS styles locally with npm
+   3. Add local custom CSS styles to Angular src/styles.css
+   4. Integrate template files into Angular App
+   5. Add support for icons and logos
+   6. Enchance ouir application with product images
+2. Search for products by Category
+   1. Define Routes
+   2. Configure Router based on our Routes
+   3. Define the Router Outlet
+   4. Setup Router Links to pass category ID param
+   5. Enchancce ProductListComponment to read category ID param
+   6. Modify Springboot App - REST Repositoty needs new method
+3. Search for products by tech box
+4. Master/ detail view of products
+5. Pagination support for products
+6. Add products to shopping cart (CRUD)
+7. Shopping cart checkout
 
 ### Development commands
 1. ng new angular-ecommers
@@ -51,4 +65,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 5. ng generate service services/product
 6. npm install bootstrap
 7. npm install @fordawesome/fontawesome-free
-8. 
+
+
+### Angular Definitions:
+##### Order of Routes is Important
+1. Router: Main routing service. Enables navigation between views based on user actions
+2. Route:  Maps a URL path to a component
+3. RouterOutlet:  Acts as a placeholder. Renders the desired component based on route
+4. RouterLink: Link to specific routes in your application
+5. Activated Route: The current active Route that loaded the component. Useful for accessing route parameters.
