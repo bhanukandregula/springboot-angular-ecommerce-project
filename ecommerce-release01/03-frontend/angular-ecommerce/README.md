@@ -60,7 +60,21 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
       5. Udpate product service to call URL on Spring boot app
       6. In HTML, replace hard coded links with menu component
    
-3. Search for products by tech box
+3. Search for products by text box
+      1. UserFlow:
+         1. Users enters Search text
+         2. Clicks Search Button
+         3. SearchComponent has a click handler method
+         4. Read Search text
+         5. Route the data to the "search" route
+         6. Handled by ProductList component
+   1. Modify Springboot app - Add a new search method
+   2. Add new Angular route for searching
+   3. Create new component for Search
+   4. Update search component to send data to search route
+   5. Enhance ProductListComponent to search for products with ProductService
+   6. Update ProductSerice to call URLew on Springboot App
+
 4. Master/ detail view of products
 5. Pagination support for products
 6. Add products to shopping cart (CRUD)
@@ -76,6 +90,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 7. npm install @fordawesome/fontawesome-free
 8. ng generate class common/product-category
 9. ng generate component components/product-category-menu
+10. ng generate component components/search
 
 
 ### Angular Definitions:
