@@ -76,6 +76,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
    6. Update ProductSerice to call URLew on Springboot App
 
 4. Master/ detail view of products
+   1. Create a new component for Product details
+   2. Add new angular route for product Details
+   3. Add router links to the product-list-grid HTML page
+   4. Enhance ProductDetailsComponent to retrive Product from ProductService
+   5. Udpate productService  to call URL on Springboot app
+   6. Udpate HTML page for the productDetailsComponent to display product details
+
 5. Pagination support for products
 6. Add products to shopping cart (CRUD)
 7. Shopping cart checkout
@@ -91,6 +98,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 8. ng generate class common/product-category
 9. ng generate component components/product-category-menu
 10. ng generate component components/search
+11. ng generate component components/ProductDetails
 
 
 ### Angular Definitions:
@@ -100,3 +108,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 3. RouterOutlet:  Acts as a placeholder. Renders the desired component based on route
 4. RouterLink: Link to specific routes in your application
 5. Activated Route: The current active Route that loaded the component. Useful for accessing route parameters.
+
+#### Challenges to solve.
+1. Images are not rendering when we navigate from side caregory panel - Books and Coffee Mugs
+2. Unable to click on the image to route to Product Details Component
